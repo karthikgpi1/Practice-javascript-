@@ -47,13 +47,112 @@
 
 // foo(1,2,3,4,5,6,7,8,9);
 
+
 //-------------------------
 
 
-// function foo(x, ...y) {     //thrible dot is rest object
-//     console.log(x,y);
-// }
+// function foo(x, ...y) {     //trible dot is rest object
+//     console.log(x,y);       //trible dot is placed only last parameters 
+// }                           //incase we have placed first parameters its error an console 
 
-// foo(1,2,3,4,5,6,7,8,9);
+// // foo(1,2,3,4,5,6,7,8,9);
 
-//--------------------------------
+// foo(1, {a:2}, {b:3}, 4, 5, 6, "hello", 7, 8, 9);
+
+//-------------foreach-------------------
+
+// let obj = {
+//     name: "john",
+//     task:["sleep","eat", "walk"],
+//     showTask:function () {
+//     this.task.forEach(function (task) {
+//         console.log(task);
+//     });
+
+//    },
+// };
+
+
+// obj.showTask();
+
+
+
+//---------------------------------------
+
+
+// let obj = {
+//         name: "john",
+//         task:["sleep","eat", "walk"],
+//         showTask:function () {
+//         let_this = this;                        //using for john sleep, john eat, john walk
+//         this.task.forEach(function (task) {
+//             console.log(_this.name, task);
+//         });
+    
+//        },
+//     };
+    
+    
+//     obj.showTask();
+
+
+//---------------array destructuring------------------------
+
+
+// let obj1 = {
+//     name:"john",
+//     task: ["sleep", "eat", "walk"],
+// };
+
+// let obj2 = {
+//     name:"sally",
+//     task: ["sleep", "eat", "walk"],
+// };   
+
+// let arr1 = [1,2,3,4,5];
+
+// let x, y;
+
+// [x, y] = arr1;
+
+// console.log(x, y);
+
+
+//---------------------------------
+
+
+
+// let obj1 = {
+//     name:"john",
+//     task: ["sleep", "eat", "walk"],
+// };
+
+// let obj2 = {
+//     name:"sally",
+//     task: ["sleep", "eat", "walk"],
+// };   
+
+// let arr1 = [1,2,3,4,5];
+
+// let x, y;
+
+// [x, y, ...z] = arr1;        //trible dot is rest objects
+
+// console.log(x, y, z);
+
+//------------------------------------
+
+// let obj1 = {
+//     name:"john",
+//     task: ["sleep", "eat", "walk"],
+// };
+
+// let obj2 = {
+//     name:"sally",
+//     task: ["sleep", "eat", "walk"],
+// };  
+
+
+// let { task } = obj1;
+// console.log(task);
+
