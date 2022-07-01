@@ -14,7 +14,7 @@
 // console.log(...arr1, ...arr2);      //this is new method
                                    //for using without cama
 
-//------------------------------------------------
+//-----------------spread-------------------------------
 
 
 // let arr1 = [1,2,3,4,5];
@@ -31,9 +31,29 @@
 //     d: 4
 // };
 
+// let x = ["hello"];
 
-// console.log([...arr1, ...arr2]);
+// console.log([...arr1, ...arr2, ...x]);  //three dot is spread operators
 
 // console.log({...obj1, ...obj2});
 
-//-----------------------------------------------
+//------------------rest-----------------------------
+
+
+
+// function foo(x,y) {       //it doesn't care about rest object
+//     console.log(x,y);
+// }
+
+// foo(1,2,3,4,5,6,7,8,9);
+
+//-------------------------
+
+
+// function foo(x, ...y) {     //thrible dot is rest object
+//     console.log(x,y);
+// }
+
+// foo(1,2,3,4,5,6,7,8,9);
+
+//--------------------------------
