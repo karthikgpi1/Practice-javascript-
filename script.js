@@ -262,46 +262,140 @@
 //------------map method------------
 
 
-let obj = [
-    {
-        name: "karthik",
-        age: 22,
-        place: "vellore",
-        email: "karthikgopi420@gmail.com",
-    },
+// let obj = [
+//     {
+//         name: "karthik",
+//         age: 22,
+//         place: "vellore",
+//         email: "karthikgopi420@gmail.com",
+//     },
 
-    {
-        name: "gopi",
-        age: 27,
-        place: "vellore",
-        email: "gopijothi@gmail.com",
-    },
+//     {
+//         name: "gopi",
+//         age: 27,
+//         place: "vellore",
+//         email: "gopijothi@gmail.com",
+//     },
 
-    {
-        name: "sri",
-        age: 24,
-        place: "vellore",
-        email: "srisri@gmail.com",
-    },
+//     {
+//         name: "sri",
+//         age: 24,
+//         place: "vellore",
+//         email: "srisri@gmail.com",
+//     },
 
-    {
-        name: "jagan",
-        age: 23,
-        place: "vellore",
-        email: "jagansri619@gmail.com",
-    },
-];
+//     {
+//         name: "jagan",
+//         age: 23,
+//         place: "vellore",
+//         email: "jagansri619@gmail.com",
+//     },
+// ];
 
-let emailArr = obj.map((element) => {
-    return element.email;
-});
+// let emailArr = obj.map((element) => {
+//     return element.email;
+// });
 
-console.log(emailArr);
-
-
+// console.log(emailArr);
 
 
+//--------------------------------------
 
+
+// let obj = [
+//     {
+//         name: "karthik",
+//         age: 22,
+//         place: "vellore",
+//         email: "karthikgopi420@gmail.com",
+//     },
+
+//     {
+//         name: "gopi",
+//         age: 27,
+//         place: "vellore",
+//         email: "gopijothi@gmail.com",
+//     },
+
+//     {
+//         name: "sri",
+//         age: 24,
+//         place: "vellore",
+//         email: "srisri@gmail.com",
+//     },
+
+//     {
+//         name: "raki",
+//         age: 24,
+//         place: "vellore",
+//         email: "rakibhai@gmail.com",
+//     },
+
+//     {
+//         name: "jagan",
+//         age: 22,
+//         place: "vellore",
+//         email: "jagansri619@gmail.com",
+//     },
+// ];
+
+// obj.filter((element) => {
+//     if (element.age == 22 || element.age == 24)
+//     console.log(element);
+// });
+
+
+//-----------------------------------
+
+
+
+// let obj = [
+//     {
+//         name: "karthik",
+//         age: 22,
+//         place: "vellore",
+//         email: "karthikgopi420@gmail.com",
+//     },
+
+//     {
+//         name: "gopi",
+//         age: 27,
+//         place: "vellore",
+//         email: "gopijothi@gmail.com",
+//     },
+
+//     {
+//         name: "sri",
+//         age: 24,
+//         place: "vellore",
+//         email: "srisri@gmail.com",
+//     },
+
+//     {
+//         name: "raki",
+//         age: 24,
+//         place: "vellore",
+//         email: "rakibhai@gmail.com",
+//     },
+
+//     {
+//         name: "jagan",
+//         age: 22,
+//         place: "vellore",
+//         email: "jagansri619@gmail.com",
+//     },
+// ];
+
+// let rr = obj.reduce((prev, curr) => {
+//     if ( curr.age == 24) {
+//         console.log("prev", prev);
+//         console.log(curr);
+//     }
+// }, 0);
+
+// console.log(rr);
+
+//-----------------------
 
 
 
