@@ -232,19 +232,71 @@
 // console.log(arr1);
 
 
-//----------------filter--------------
+//----------------filter and reduce--------------
 
 
-let data = [1,2,3,4,5,6,7,8,9,10];
+// let data = [1,2,3,4,5,6,7,8,9,10];
+
+// let sum = 0;
+// data.forEach(function (value) {
+//     if (value % 2 !=0) {
+//         sum += value;
+//     }
+// });
+
+// console.log(sum);
+
+// let arr1 = data.filter((value) => {
+//     return value % 2 !== 0;
+// });
+// console.log(arr1);
 
 
+// let result = arr1.reduce(function (prev, curr) {
+//     return prev + curr;
+// });
 
-let arr1 = data.filter((value) => {
-    return value % 2 !== 0;
+// console.log(arr1,result);
+
+
+//------------map method------------
+
+
+let obj = [
+    {
+        name: "karthik",
+        age: 22,
+        place: "vellore",
+        email: "karthikgopi420@gmail.com",
+    },
+
+    {
+        name: "gopi",
+        age: 27,
+        place: "vellore",
+        email: "gopijothi@gmail.com",
+    },
+
+    {
+        name: "sri",
+        age: 24,
+        place: "vellore",
+        email: "srisri@gmail.com",
+    },
+
+    {
+        name: "jagan",
+        age: 23,
+        place: "vellore",
+        email: "jagansri619@gmail.com",
+    },
+];
+
+let emailArr = obj.map((element) => {
+    return element.email;
 });
-console.log(arr1);
 
-//------------------------
+console.log(emailArr);
 
 
 
