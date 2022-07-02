@@ -156,3 +156,102 @@
 // let { task } = obj1;
 // console.log(task);
 
+//-------------------------------
+
+
+// fetch('https://restcountries.com/v3.1/all')
+//     .then((resp) => resp.json())
+//     .then((result) => {
+//         result.forEach((element) => {
+//             console.log(element.name);
+//         }); 
+//     })
+
+//     .catch((err) => console.log(err));
+    
+
+
+    //------------------------
+
+    // fetch('https://restcountries.com/v3.1/all')
+    // .then((resp) => resp.json())
+    // .then((result) => {
+    //     result.forEach((element) => {
+    //         let { name, religion} = element;
+    //         console.log(name, religion);
+    //     }); 
+    // })
+
+    // .catch((err) => console.log(err));
+    
+//-----------array forloop in modulus-------------
+
+// let data = [1,2,3,4,5,6,7,8,9,10];
+
+// let arr1 = [];
+
+// for (let index = 0; index < data.length; index++)  {
+//     if (data[index] % 2 === 0) {
+//         console.log(data[index]);
+//         arr1.push(data[index]);
+//     }
+// }
+      
+// console.log(arr1);
+
+//------------------------------
+
+// let data = [1,2,3,4,5,6,7,8,9,10];
+
+// let arr1 = [];
+
+// for (let index = 0; index < data.length; index++)  {
+//     if (data[index] % 2 !== 0) {
+//         console.log(data[index]);
+//         arr1.push(data[index]);
+//     }
+// }
+      
+// console.log(arr1);
+
+
+//-----------------------same concept with foreach method---
+
+// let data = [1,2,3,4,5,6,7,8,9,10];
+
+// let arr1 = [];
+
+// data.forEach (function (value) {
+//     if (value % 2 != 0) {
+//         arr1.push(value)
+//     }
+// });
+    
+
+      
+// console.log(arr1);
+
+
+//----------------filter--------------
+
+
+let data = [1,2,3,4,5,6,7,8,9,10];
+
+
+
+let arr1 = data.filter((value) => {
+    return value % 2 !== 0;
+});
+console.log(arr1);
+
+//------------------------
+
+
+
+
+
+
+
+
+
+
